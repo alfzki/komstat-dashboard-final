@@ -390,8 +390,488 @@ ui <- fluidPage(
                 .main-content { width: 100%; padding: 0; }
                 .card { box-shadow: none; border: 1px solid rgba(0, 0, 0, 0.12); }
             }
+
+            /* Dark Mode Styles */
+            body.dark-mode {
+                background-color: #181818 !important;
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode .container-fluid {
+                background-color: #181818;
+            }
+
+            body.dark-mode .card,
+            body.dark-mode .card-header,
+            body.dark-mode .card-body {
+                background-color: #2d2d2d !important;
+                color: #f0f0f0 !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .app-bar {
+                background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%) !important;
+                color: #ffffff !important;
+            }
+
+            body.dark-mode .sidebar {
+                background-color: #1e1e1e !important;
+            }
+
+            body.dark-mode .main-content {
+                background-color: #181818 !important;
+            }
+
+            body.dark-mode .form-control,
+            body.dark-mode .form-select {
+                background-color: #ffffff !important;
+                color: #212529 !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .form-control:focus,
+            body.dark-mode .form-select:focus {
+                background-color: #ffffff !important;
+                color: #212529 !important;
+                border-color: #1976d2 !important;
+                box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25) !important;
+            }
+
+            /* Selectize input styling for dark mode */
+            body.dark-mode .selectize-input,
+            body.dark-mode .selectize-input.has-items {
+                background-color: #ffffff !important;
+                color: #212529 !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .selectize-input:focus,
+            body.dark-mode .selectize-input.focus {
+                background-color: #ffffff !important;
+                color: #212529 !important;
+                border-color: #1976d2 !important;
+                box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25) !important;
+            }
+
+            body.dark-mode .selectize-input > input {
+                color: #212529 !important;
+            }
+
+            body.dark-mode .selectize-dropdown {
+                background-color: #ffffff !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .selectize-dropdown .option {
+                background-color: #ffffff !important;
+                color: #212529 !important;
+            }
+
+            body.dark-mode .selectize-dropdown .option:hover,
+            body.dark-mode .selectize-dropdown .option.active {
+                background-color: #f8f9fa !important;
+                color: #212529 !important;
+            }
+
+            body.dark-mode .selectize-input .item {
+                background-color: #e9ecef !important;
+                color: #212529 !important;
+                border-color: #ced4da !important;
+            }
+
+            body.dark-mode .btn-primary {
+                background-color: #1976d2 !important;
+                border-color: #1976d2 !important;
+                color: #ffffff !important;
+            }
+
+            body.dark-mode .btn-primary:hover {
+                background-color: #1565c0 !important;
+                border-color: #1565c0 !important;
+            }
+
+            body.dark-mode .btn-secondary,
+            body.dark-mode .btn-outline-secondary {
+                background-color: #404040 !important;
+                border-color: #404040 !important;
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode .btn-success {
+                background-color: #388e3c !important;
+                border-color: #388e3c !important;
+            }
+
+            body.dark-mode .btn-warning {
+                background-color: #f57c00 !important;
+                border-color: #f57c00 !important;
+            }
+
+            body.dark-mode .btn-info {
+                background-color: #0288d1 !important;
+                border-color: #0288d1 !important;
+            }
+
+            body.dark-mode .alert-info {
+                background-color: #1e3a5f !important;
+                border-color: #0288d1 !important;
+                color: #b3d4fc !important;
+            }
+
+            body.dark-mode .alert-warning {
+                background-color: #4a3728 !important;
+                border-color: #f57c00 !important;
+                color: #ffcc80 !important;
+            }
+
+            body.dark-mode .alert-success {
+                background-color: #2e5c30 !important;
+                border-color: #388e3c !important;
+                color: #c8e6c9 !important;
+            }
+
+            body.dark-mode .alert-danger {
+                background-color: #5c2e2e !important;
+                border-color: #d32f2f !important;
+                color: #ffcdd2 !important;
+            }
+
+            body.dark-mode .control-label {
+                color: #e0e0e0 !important; /* Improved contrast from #b0b0b0 */
+            }
+
+            body.dark-mode .form-text {
+                color: #c0c0c0 !important; /* Improved contrast from #909090 */
+            }
+
+            body.dark-mode .form-check-input {
+                background-color: #2d2d2d !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .form-check-input:checked {
+                background-color: #1976d2 !important;
+                border-color: #1976d2 !important;
+            }
+
+            body.dark-mode .form-check-label {
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode hr {
+                background-color: #404040 !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .shiny-notification {
+                background-color: #1e1e1e !important;
+                color: #f0f0f0 !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .shiny-notification-error {
+                background-color: #d32f2f !important;
+            }
+
+            body.dark-mode .shiny-notification-warning {
+                background-color: #f57c00 !important;
+            }
+
+            body.dark-mode .shiny-notification-message {
+                background-color: #1976d2 !important;
+            }
+
+            body.dark-mode .progress {
+                background-color: rgba(25, 118, 210, 0.2) !important;
+            }
+
+            body.dark-mode .progress-bar {
+                background-color: #1976d2 !important;
+            }
+
+            body.dark-mode .navbar-nav .nav-link {
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode .dropdown-menu {
+                background-color: #2d2d2d !important;
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .dropdown-item {
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode .dropdown-item:hover {
+                background-color: #404040 !important;
+                color: #ffffff !important;
+            }
+
+            body.dark-mode .table {
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode .table th,
+            body.dark-mode .table td {
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+                background-color: rgba(255, 255, 255, 0.05) !important;
+            }
+
+            body.dark-mode .border {
+                border-color: #404040 !important;
+            }
+
+            body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+            body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+                color: #f0f0f0 !important;
+            }
+
+            body.dark-mode p, body.dark-mode span, body.dark-mode div {
+                color: #f0f0f0;
+            }
+
+            /* Plot backgrounds for dark mode */
+            body.dark-mode .plotly {
+                background-color: #2d2d2d !important;
+            }
+
+            /* Info box styles for both light and dark modes */
+            .info-box-light {
+                background-color: #d4edda;
+                border-color: #c3e6cb;
+                color: #155724;
+            }
+
+            .warning-box-light {
+                background-color: #fff3cd;
+                border-left-color: #ffc107;
+                color: #856404;
+            }
+
+            .note-box-light {
+                background-color: #d1ecf1;
+                border-left-color: #17a2b8;
+                color: #0c5460;
+            }
+
+            .data-info-box-light {
+                background-color: #f8f9fa;
+                border-left-color: #007bff;
+                color: #212529;
+            }
+
+            /* Dark mode styles for info boxes */
+            body.dark-mode .info-box-light {
+                background-color: #1e3a2e !important;
+                border-color: #2d5a3d !important;
+                color: #b3d4c4 !important;
+            }
+
+            body.dark-mode .warning-box-light {
+                background-color: #4a3728 !important;
+                border-left-color: #f57c00 !important;
+                color: #ffcc80 !important;
+            }
+
+            body.dark-mode .note-box-light {
+                background-color: #1e3a5f !important;
+                border-left-color: #0288d1 !important;
+                color: #b3d4fc !important;
+            }
+
+            body.dark-mode .data-info-box-light {
+                background-color: #1e2a3a !important;
+                border-left-color: #1976d2 !important;
+                color: #e3f2fd !important;
+            }
+
+            /* Ensure all text elements have proper contrast in dark mode */
+            body.dark-mode .text-muted,
+            body.dark-mode .small,
+            body.dark-mode small {
+                color: #c0c0c0 !important;
+            }
+
+            body.dark-mode .text-info {
+                color: #64b5f6 !important;
+            }
+
+            body.dark-mode .text-success {
+                color: #81c784 !important;
+            }
+
+            body.dark-mode .text-warning {
+                color: #ffb74d !important;
+            }
+
+            body.dark-mode .text-danger {
+                color: #e57373 !important;
+            }
+
+            /* Improve readability for help text and descriptions */
+            body.dark-mode .help-block,
+            body.dark-mode .form-text {
+                color: #c0c0c0 !important;
+            }
+
+            /* Ensure proper contrast for all headings and paragraphs */
+            body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+            body.dark-mode h4, body.dark-mode h5, body.dark-mode h6,
+            body.dark-mode p, body.dark-mode span, body.dark-mode div,
+            body.dark-mode li, body.dark-mode td, body.dark-mode th {
+                color: #f0f0f0 !important;
+            }
+
+            /* Override any remaining hardcoded colors */
+            body.dark-mode [style*='color:#'],
+            body.dark-mode [style*='color: #'] {
+                color: #f0f0f0 !important;
+            }
         "))
     ),
+
+    # JavaScript for dark mode communication
+    tags$script(HTML("
+        // Enhanced Dark mode communication script
+        // Listen for postMessage events from the React frontend
+
+        let currentDarkMode = false;
+        let communicationReady = false;
+
+        // Initialize dark mode communication
+        function initializeDarkModeListener() {
+            window.addEventListener('message', function(event) {
+                // Security check: only accept messages from trusted frontend origins
+                const trustedOrigins = [
+                    'http://localhost:3000',
+                    'http://127.0.0.1:3000',
+                    'http://localhost:5173', // Vite dev server
+                    'http://127.0.0.1:5173'  // Vite dev server
+                ];
+
+                if (!trustedOrigins.includes(event.origin)) {
+                    console.log('Ignored message from untrusted origin:', event.origin);
+                    return;
+                }
+
+                // Handle different message types
+                if (event.data && typeof event.data === 'object') {
+                    handleIncomingMessage(event.data, event.origin);
+                }
+            });
+
+            console.log('Dark mode message listener initialized');
+        }
+
+        // Handle incoming messages from React frontend
+        function handleIncomingMessage(data, origin) {
+            const { type, value, timestamp, source } = data;
+
+            switch(type) {
+                case 'DARK_MODE':
+                    handleDarkModeMessage(value, source);
+                    break;
+                case 'REQUEST_READY':
+                    handleReadyRequest(origin);
+                    break;
+                default:
+                    console.log('Unknown message type:', type);
+            }
+        }
+
+        // Handle dark mode toggle message
+        function handleDarkModeMessage(isDarkMode, source) {
+            console.log('Received dark mode message:', isDarkMode, 'from:', source);
+
+            if (currentDarkMode !== isDarkMode) {
+                currentDarkMode = isDarkMode;
+                applyDarkMode(isDarkMode);
+            }
+        }
+
+        // Apply dark mode to the document
+        function applyDarkMode(isDarkMode) {
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                console.log('Applied dark mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+                console.log('Applied light mode');
+            }
+
+            // Optionally, update a Shiny input for server-side awareness
+            if (typeof Shiny !== 'undefined' && Shiny.setInputValue) {
+                Shiny.setInputValue('dark_mode', isDarkMode, {priority: 'event'});
+            }
+
+            // Trigger custom event for other scripts
+            const event = new CustomEvent('darkModeChanged', {
+                detail: { isDarkMode: isDarkMode }
+            });
+            document.dispatchEvent(event);
+        }
+
+        // Handle ready request from frontend
+        function handleReadyRequest(origin) {
+            console.log('Frontend requested ready state');
+            sendReadyMessage(origin);
+        }
+
+        // Send ready message to parent window
+        function sendReadyMessage(targetOrigin) {
+            try {
+                const message = {
+                    type: 'SHINY_READY',
+                    currentDarkMode: currentDarkMode,
+                    timestamp: Date.now(),
+                    source: 'shiny-app'
+                };
+
+                window.parent.postMessage(message, targetOrigin);
+                console.log('Sent SHINY_READY message to:', targetOrigin);
+                communicationReady = true;
+            } catch(error) {
+                console.error('Error sending ready message:', error);
+            }
+        }
+
+        // Request dark mode state on load
+        function requestInitialDarkMode() {
+            console.log('Shiny app loaded, requesting dark mode state from parent...');
+
+            const trustedParents = [
+                'http://localhost:3000',
+                'http://127.0.0.1:3000',
+                'http://localhost:5173',
+                'http://127.0.0.1:5173'
+            ];
+
+            trustedParents.forEach(origin => {
+                sendReadyMessage(origin);
+            });
+        }
+
+        // Initialize when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                initializeDarkModeListener();
+                setTimeout(requestInitialDarkMode, 100);
+            });
+        } else {
+            initializeDarkModeListener();
+            setTimeout(requestInitialDarkMode, 100);
+        }
+
+        // Also trigger on window load as backup
+        window.addEventListener('load', function() {
+            if (!communicationReady) {
+                setTimeout(requestInitialDarkMode, 200);
+            }
+        });
+    ")),
 
     # Material UI App Bar instead of titlePanel
     div(
